@@ -23,8 +23,9 @@
 
 .hero{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
+    margin: 15px;
 }
 
 .productos{
@@ -69,11 +70,10 @@
     
 }
 
-.carta-title{
-    color: rgb(220, 220, 220);
+.card-title{
+    color: rgb(0, 0, 0);
     background-color: rgb(44, 154, 217);
     text-align: center;
-    font-weight: bolder;
     padding: 5px 0px;
     margin: 0px;
 }
@@ -366,12 +366,17 @@ input{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #buscar-pal {
         max-width: 50%;
         width: 100%;
         margin: 20px auto;
     }
+
+    .col-sm-10{
+        width: auto;
+    }
+
 
     .nav-item {
         text-align: center; min-width: 40% !important;
