@@ -34,7 +34,59 @@
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
+    align-content: center;
 }
+
+.heroProductos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+    width: 100%;
+}
+
+.carta{
+    padding: 20px;
+}
+
+.carta-body{
+    align-content: center;
+}
+
+.carta-body-moneda{
+    background-color: rgb(44, 154, 217);
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.carta-title{
+    color: rgb(220, 220, 220);
+    background-color: rgb(44, 154, 217);
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+.carta-text{
+    color: rgb(220, 220, 220);
+    background-color: rgba(44, 205, 217, 0);
+    text-align: center;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+
 
 .ocult {
     display: none;
@@ -81,10 +133,6 @@
     border-radius: 10px;
 }
 
-.col-sm-4 {
-    align-items: center;
-}
-
 .btn-info {
     background-color: rgb(44,212,217);
     border: none;
@@ -97,7 +145,7 @@
 .btn-primary {
     margin-bottom: 0.5rem;
     margin-left: 10px;
-    background-color: rgb(44, 154, 217) ;
+    background-color: rgb(44, 197, 217) ;
     border: 1px black !important;
 }
 
@@ -166,7 +214,6 @@ li {
 
 div {
     object-fit: cover;
-    border-radius: 10px;
 }
 
 /*grid*/
@@ -179,7 +226,7 @@ div {
 }
 
 .active,
-.card {
+.{
     overflow: hidden;
 }
 
@@ -332,11 +379,6 @@ input{
 
     #carri {
         top: 20em;
-    }
-
-    .col-sm-4 {
-        max-width: 80%;
-
     }
 
     .text {

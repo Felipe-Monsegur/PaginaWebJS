@@ -107,22 +107,25 @@ document.addEventListener('DOMContentLoaded', () => {
         arayproductos.forEach((info) => {
             // Estructura
             const miNodo = document.createElement('div');
-            miNodo.classList.add('card', 'col-sm-4', );
+            miNodo.classList.add('carta', "col-lg-3","col-sm-6", );
             // Body
             const miNodoCardBody = document.createElement('div');
-            miNodoCardBody.classList.add('card-body');
+            miNodoCardBody.classList.add('carta-body');
             // Titulo
             const miNodoTitle = document.createElement('h3');
-            miNodoTitle.classList.add('card-title');
+            miNodoTitle.classList.add('carta-title');
             miNodoTitle.innerText = info.nombre;
-            // Precio
-            const miNodoPrecio = document.createElement('h5');
-            miNodoPrecio.classList.add('card-text');
-            miNodoPrecio.innerText = `$${info.moneda}`;
             //Imagen
             const miNodoImagen = document.createElement('img');
             miNodoImagen.classList.add('image');
             miNodoImagen.setAttribute('src', info.img);
+            // Bodydelprecio
+            const miNodoCardBodyMoneda = document.createElement('div');
+            miNodoCardBodyMoneda.classList.add('carta-body-moneda');
+            // Precio
+            const miNodoPrecio = document.createElement('h5');
+            miNodoPrecio.classList.add('carta-text');
+            miNodoPrecio.innerText = `$${info.moneda}`;
             // Boton 
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
@@ -130,11 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoBoton.setAttribute('marcador', info.id);
             miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
             // Insertamos
-            miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.append(miNodoTitle);
-            miNodoCardBody.append(miNodoPrecio);
+            miNodoCardBody.appendChild(miNodoImagen);
+            miNodoCardBody.append(miNodoCardBodyMoneda);
+            miNodoCardBodyMoneda.append(miNodoPrecio);
             //miNodoCardBody.append(miNodoImagen)
-            miNodoCardBody.append(miNodoBoton);
+            miNodoCardBodyMoneda.append(miNodoBoton);
             miNodo.append(miNodoCardBody);
             DOMitems.append(miNodo);
         });
