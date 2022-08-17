@@ -17,96 +17,84 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "Iphone 13",
             img: "img/Productos celulares/IPHONE 13.jpg",
             alt: "iphone",
-            moneda: 400,
-            stock: 10,
+            moneda: 1105,
             id: 1,
         },
         {
-            nombre: "Iphone 13 mini",
+            nombre: "Iphone 13 Mini",
             img: "img/Productos celulares/IPHONE 13 MINI.jpg",
             alt: "iphone",
-            moneda: 250,
-            stock: 15,
+            moneda: 945,
             id: 2,
         },
         {
-            nombre: "Iphone 13 Pro max",
+            nombre: "Iphone 13 Pro Max",
             img: "img/Productos celulares/IPHONE 13 PRO MAX.jpg",
-            alt: "Iphone",
-            moneda: 1400,
-            stock: 11,
+            alt: "iphone",
+            moneda: 1475,
             id: 3,
         },
         {
             nombre: "Iphone 12",
             img: "img/Productos celulares/IPHONE 12.jpg",
-            alt: "Iphone",
-            moneda: 470,
-            stock: 6,
+            alt: "iphone",
+            moneda: 910,
             id: 4,
         },
 
         {
             nombre: "Iphone 11",
             img: "img/Productos celulares/IPHONE 11.jpg",
-            alt: "Iphone",
-            moneda: 300,
-            stock: 1,
+            alt: "iphone",
+            moneda: 645,
             id: 5,
         },
 
         {
-            nombre: "MACBOOK AIR 13",
+            nombre: "Macbook air 13",
             img: "img/Productos Laptops/macbook air 13.jpg",
             alt: "macbook",
-            moneda: 500,
-            stock: 12,
+            moneda: 925,
             id: 6,
         },
 
         {
-            nombre: "MACBOOK PRO 13",
+            nombre: "Macbook Pro 13",
             img: "img/Productos Laptops/mcbook pro 13.jpg",
-            alt: "macbook",
-            moneda: 250,
-            stock: 23,
+            alt: "Macbook",
+            moneda: 1210,
             id: 7,
         },
 
         {
-            nombre: "MAC AIR CUSTOM",
+            nombre: "Mac Air Custom",
             img: "img/Productos Laptops/mac air custom.jpg",
-            alt: "macbook",
-            moneda: 250,
-            stock: 15,
+            alt: "Macbook",
+            moneda: 1400,
             id: 8,
         },
 
         {
-            nombre: "LAPTOP HP",
+            nombre: "Laptop hp",
             img: "img/Productos Laptops/laptop hp.jpg",
             alt: "hp",
-            moneda: 250,
-            stock: 3,
+            moneda: 740,
             id: 9,
         },
 
         {
-            nombre: "LAPTOP LENOVO",
+            nombre: "Laptop Lenovo",
             img: "img/Productos Laptops/laptop lenovo.jpg",
             alt: "lenovo",
-            moneda: 320,
-            stock: 11,
+            moneda: 740,
             id: 10,
         },
-
         {
-            nombre: "LAPTOP DELL",
+            nombre: "Laptop dell",
             img: "img/Productos Laptops/laptop dell.jpg",
             alt: "dell",
-            moneda: 320,
-            stock: 11,
-            id: 10,
+            moneda: 740,
+            id: 11,
         },
 
     ];
@@ -131,10 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const miNodoPrecio = document.createElement('h5');
             miNodoPrecio.classList.add('card-text');
             miNodoPrecio.innerText = `$${info.moneda}`;
-            //Stock
-            const miNodoStock = document.createElement('h5');
-            miNodoStock.classList.add('card-text');
-            miNodoStock.innerText = `Stock: ${info.stock}`;
             //Imagen
             const miNodoImagen = document.createElement('img');
             miNodoImagen.classList.add('image');
@@ -149,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.append(miNodoTitle);
             miNodoCardBody.append(miNodoPrecio);
-            miNodoCardBody.append(miNodoStock);
             //miNodoCardBody.append(miNodoImagen)
             miNodoCardBody.append(miNodoBoton);
             miNodo.append(miNodoCardBody);
@@ -163,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function anyadirProductoAlCarrito(e) {
         // Anyadimos el Nodo a nuestro carrito
         carrito.push(e.target.getAttribute('marcador'))
-        arayproductos[e.target.getAttribute('marcador') - 1].stock--;
+        arayproductos[e.target.getAttribute('marcador') - 1];
         renderizarProductos();
         // Actualizamos el carrito 
         renderizarCarrito();
@@ -195,11 +178,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 0);
             // Creamos el nodo del item del carrito
             const miNodo = document.createElement('li');
-            miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+            miNodo.classList.add('list-group-item', 'text-right');
             miNodo.innerText = `${numeroUnidadesItem} x ${miItem[0].nombre} - $${miItem[0].moneda}`;
             // Boton de borrar
             const miBoton = document.createElement('button');
-            miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+            miBoton.classList.add('btn', 'btn-danger');
             miBoton.innerText = 'X';
             miBoton.style.marginLeft = '1rem';
             miBoton.dataset.item = item;
@@ -329,7 +312,9 @@ document.addEventListener('DOMContentLoaded', () => {
             elem.innerText = "Cerrar carrito";
         } else {
             elemento.className = "col-sm-4 ocult";
-            elem.innerText = "Carrito";
+            /*aca me gustaria que se ponga denuevo la imagen del carrito pero no me sale
+            elem.innerImg="img/carrito.jpg" */
+            elem.innerText= "carrito";
         }
     }
 

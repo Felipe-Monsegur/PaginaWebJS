@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header{
+    padding: 15px;
+    font-family: Impact, sans-serif;
+    background: rgb(44,212,217);
+    background: radial-gradient(circle, rgb(44,212,217) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+    grid-area: header;
+}
+
+.main{
+    padding: 20px;
+}
+
+
+
+.productos{
+    display: flex;
+    align-items: center;
+    flex-wrap: ;
+    height:auto;
+    width: 100%;
+}
+
+.ocult {
+    display: none;
+}
+
+#carri {
+    background-color: rgba(110, 228, 218, 0.959);
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 11em
+}
+
+.show {
+    max-height: 80%;
+    align-items: right !important;
+    padding: 20px;
+}
+
+.show::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.show::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.show::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.show::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.show::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.show::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.col-sm-4 {
+    align-items: center;
+}
+
+.btn-info {
+    background-color: rgb(44,212,217);
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: rgb(74, 202, 74);
+}
+
+.btn-primary {
+    margin-bottom: 0.5rem;
+    margin-left: 10px;
+    background-color: rgb(44, 154, 217) ;
+    border: 1px black !important;
+}
+
+#items .card {
+    transition: all 0.3s ease-in-out
+}
+
+#buscar-pal {
+    max-width: 1120px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+body{
+    background: linear-gradient(175deg,rgb(44, 125, 217),#110023);
+    background-image: url(../img/fondo\ negro\ cuadro.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoWeb {
+    width: 3em;
+    height: auto
+}
+
+.title {
+    color: #a8f9ff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 32px;
+    border-radius: 3px ;
+}
+
+.nav-item {
+    background-color: #f0f0f000;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: #181717;
+}
+
+li {
+    margin: auto 1px
+}
+
+.title {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 1px #E2CFCF;
+}
+.title:hover{
+    box-shadow: 5px 5px 5px 1px #1b1a1a;
+}
+
+div {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.active,
+.card {
+    overflow: hidden;
+}
+
+.grid-container div.active {
+    display: initial;
+}
+
+.image {
+    margin: auto;
+    display: block;
+    max-width: 200px;
+    max-height: 300px
+}
+
+.logosTamaño{
+    width: 70px;
+}
+
+
+
+/*grid////////////////////////////*/
+
+
+div h3 {
+    margin-left: 20px;
+}
+
+/*boton*/
+#boton {
+    margin: auto 10px;
+    float: right;
+    text-decoration: none;
+    color: black;
+    background-color: #F2B3B3;
+    border: 1px solid #000000;
+}
+
+a:hover {
+    color: white !important;
+}
+
+/*////////////boton///////////////////*/
+/*buscar//////////////////////*/
+.text {
+    width: 35%;
+    margin: 0 20px;
+    float: right;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 10px;
+    height: 40px;
+    width: 25%;
+}
+
+.demo a {
+    background-color: rgb(131, 125, 125);
+    padding: 10px;
+}
+
+.demo a:hover {
+    color: rgb(102, 47, 47);
+}
+
+
+.row {
+    justify-content: space-around
+}
+
+
+/*footer/////////////////*/
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+}
+h5 {
+    margin-left: 50px;
+    background-color: rgb(44, 154, 217);
+    display: inline-flex;
+    color:rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 0.4em;
+}
+
+
+footer{
+        background: radial-gradient(circle, rgb(44,212,217) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+        grid-area: footer;
+        flex-direction: column;
+        display: flex;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .Copyright{
+        text-decoration: none;
+        color: black;
+    }
+
+    .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .logosTamaño{
+        width: 55px;
+    }
+
+
+
+.icon-text {
+    width: 100%;
+    margin: 0 auto
+}
+
+.icon-text-icon {
+    float: left;
+    width: 20%;
+    padding: 4%;
+
+}
+
+input{
+    all: unset;
+    padding: 0 10px;
+}
+
+.icon-text-text {
+    float: left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+
+}
+
+
+
+@media (max-width: 600px) {
+    #buscar-pal {
+        max-width: 50%;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .nav-item {
+        text-align: center; min-width: 40% !important;
+    }
+
+    #carri {
+        top: 20em;
+    }
+
+    .row {
+
+        justify-content: center
+    }
+
+    .col-sm-4 {
+        max-width: 80%;
+
+    }
+
+    .text {
+        width: 100%;
+        float: none;
+
+        margin: auto;
+
+    }
+
+    .nav-pills {
+        justify-content: space-around
+    }
+
+    /*grid*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        background-color: #F2C9C9;
+        padding: 10px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    /*grid////////////////////////////*/
+    .nav-link {
+        font-size: 23px;
+    }
+
+    .icon-text-icon {
+        margin-left: 20px;
+        font-size: 11px;
+        text-align: left
+    }
+}
+
+
+.jGrowl-notification {
+    background-color: rgba(21, 223, 38, 0.75) !important
+}
+
+.test {
+    background-color: #ff0000 !important;
+}
