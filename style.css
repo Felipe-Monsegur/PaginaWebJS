@@ -153,7 +153,8 @@ body{
 }
 
 .nav-link {
-    color: #181717;
+    color: #252424;
+    font-size: 20px;
 }
 
 li {
@@ -373,8 +374,8 @@ input{
     }
 
     /*grid////////////////////////////*/
-    .nav-link {
-        font-size: 23px;
+    .nav-link{
+        font-size: 17px;
     }
 
     .icon-text-icon {
