@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin: 15px;
+    margin: 25px;
 }
 
 .productos{
@@ -225,10 +225,6 @@ div {
     padding: 10px;
 }
 
-.active,
-.{
-    overflow: hidden;
-}
 
 .grid-container div.active {
     display: initial;
