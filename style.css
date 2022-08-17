@@ -12,18 +12,28 @@
     grid-area: header;
 }
 
+
 .main{
     padding: 20px;
 }
 
+.container{
+    margin-bottom:15px;
+}
 
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
 
 .productos{
     display: flex;
     align-items: center;
-    flex-wrap: ;
     height:auto;
     width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .ocult {
@@ -101,6 +111,12 @@
     margin: 20px auto;
 }
 
+#mostrar-carrito{
+
+}
+
+
+
 body{
     background: linear-gradient(175deg,rgb(44, 125, 217),#110023);
     background-image: url(../img/fondo\ negro\ cuadro.jpg) ;
@@ -111,6 +127,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+
+
 
 .logoWeb {
     width: 3em;
@@ -229,7 +248,9 @@ a:hover {
 
 
 .row {
-    justify-content: space-around
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 
@@ -314,11 +335,6 @@ input{
 
     #carri {
         top: 20em;
-    }
-
-    .row {
-
-        justify-content: center
     }
 
     .col-sm-4 {
