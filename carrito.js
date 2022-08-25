@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Calcula el precio total teniendo en cuenta los productos repetidos
+     * Calcula el precio total 
      */
     function calcularTotal() {
         // Recorremos el array del carrito 
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Varia el carrito y vuelve a dibujarlo
+     * Varia el carrito 
      */
     function vaciarCarrito() {
         // Limpiamos los productos guardados
@@ -330,11 +330,24 @@ document.addEventListener('DOMContentLoaded', () => {
     DOMmostrarCarrito.addEventListener('click', mostrarCarrito);
 
 
+/*fetch (puse el ejemplo de la clase el de star wars, pero no pega con mmi pagina asi q no lo quiero agregar)
+
+function render(lista) {
+    for (const people of lista) {
+        console.log('Nombre: ${people.name}
+                    Altura: ${people.height}
+                    genero: ${people.gender}
+                    Color: ${people.skin_color}
+                    Peso ${people.mass}')
+    }
+}
+
+fetch('https://swapi.dev/api/people')
+    .then((response) => response.json())
+    .then((data) => render(data.results))
 
 
-
-
-
+*/
 
     // Inicio
     cargarCarritoDeLocalStorage();
