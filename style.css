@@ -12,6 +12,10 @@
     grid-area: header;
 }
 
+.blanco{
+    color: white;
+}
+
 
 .main{
     padding: 20px;

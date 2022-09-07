@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     /**
-     * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
+     * Dibuja todos los productos a partir de la base de datos.
      */
     function renderizarProductos() {
         DOMitems.innerHTML = '';
@@ -313,12 +313,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let elem = document.getElementById("mostrar-carrito");
         if (elemento.className == "col-sm-4 ocult") {
             elemento.className = "col-sm-4 show";
-            elem.innerText = "Cerrar carrito";
+            elem.innerHTML= "<img src=\"img/carrito cruz.png\" width=\"25px\" height=\"25px\">";
         } else {
             elemento.className = "col-sm-4 ocult";
             /*aca me gustaria que se ponga denuevo la imagen del carrito pero no me sale
             elem.innerImg="img/carrito.jpg" */
-            elem.innerText= "carrito";
+            elem.innerHTML= "<img src=\"img/carrito.jpg\" width=\"25px\" height=\"25px\">";
         }
     }
 
