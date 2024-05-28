@@ -4,6 +4,11 @@
     list-style: none;
 }
 
+/* ocultar scroll bar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
 .header{
     padding: 15px;
     font-family: Impact, sans-serif;
@@ -49,6 +54,12 @@
     flex-direction: row;
 }
 
+.card{
+    margin: 20px;
+}
+
+
+
 .image{
     display: flex;
     flex-direction: column;
@@ -71,6 +82,7 @@
     font-weight: bolder;
     padding: 5px 0px;
     margin: 0px;
+    border-radius: 5px;
     
 }
 
@@ -80,6 +92,7 @@
     text-align: center;
     padding: 5px 0px;
     margin: 0px;
+    border-radius: 5px;
 }
 
 .carta-text{
@@ -97,7 +110,7 @@
 }
 
 #carri {
-    background-color: rgba(110, 228, 218, 0.959);
+    background-color: rgba(189, 190, 190, 0.959);
     border-radius: 10px;
     position: absolute;
     right: 10px;
@@ -143,11 +156,10 @@
 }
 
 .btn-info:hover {
-    background-color: rgb(74, 202, 74);
+    background-color: rgb(27, 121, 124);
 }
 
 .btn-primary {
-    margin-bottom: 0.5rem;
     margin-left: 10px;
     background-color: rgb(44, 197, 217) ;
     border: 1px black !important;
@@ -163,14 +175,17 @@
     margin: 20px 0px 20px 0px;
 }
 body{
-    background: linear-gradient(175deg,rgb(44, 125, 217),#110023);
-    background-image: url(./img/fondo\ negro\ cuadro.jpg);
+    background: linear-gradient(175deg,#333,#090013);
+    /*background-image: url(./img/fondo\ negro\ cuadro.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: productos;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100vh;
 }
 
 
@@ -178,6 +193,7 @@ body{
     display: flex;
     align-items: center;
     align-content: center;
+    margin-left: 20px;
 }
 
 
@@ -312,12 +328,11 @@ a:hover {
     padding: 0 0 3% 0;
 }
 h5 {
-    margin-left: 50px;
     background-color: rgb(44, 154, 217);
     display: inline-flex;
     color:rgb(0, 0, 0);
-    padding: 5px;
     border-radius: 0.4em;
+    margin: 0px;
 }
 
 
@@ -327,6 +342,10 @@ footer{
         flex-direction: column;
         display: flex;
         padding: 20px 20px 20px 20px;
+        margin-top: auto;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .Copyright{
